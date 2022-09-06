@@ -1,0 +1,14 @@
+name = "miniflare-debug"
+main = "./build/index.js"
+compatibility_date = "2022-07-14"
+
+[site]
+bucket = "./public"
+
+[build]
+command = "npm run build"
+
+[durable_objects]
+bindings = [
+    { name = "LIST", class_name = "List", script_name = "miniflare-debug-objects" }
+]

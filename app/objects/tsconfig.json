@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": ["./src/*.ts"],
+  "exclude": ["./dist"],
+  "rootDir": "./src",
+  "compilerOptions": {
+    "lib": ["ES2019"],
+    "alwaysStrict": true,
+    "noEmitOnError": true,
+    "allowJs": false,
+    "preserveConstEnums": true,
+    "types": ["@cloudflare/workers-types"],
+    "noEmit": false
+  }
+}
