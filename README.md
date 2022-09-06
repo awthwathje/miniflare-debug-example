@@ -16,6 +16,8 @@ npm run dev:worker
 npm run dev:remix
 ```
 
+The app will be available on http://localhost:8787.
+
 On first load, the WebSocket to a Durable Object will be opened automatically and the list of items will be retrieved and displayed.
 
 On click of the "Close socket" button, the client will request the WebSocket terminsation and Durable Object will close it. Immediately after that the following error in the console will get logged:
